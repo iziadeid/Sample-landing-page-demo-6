@@ -28,8 +28,13 @@ body {
 }
 
 @media (max-width:767px) {
+    body {
+        display: block;
+    }
+
     .container {
         width: 100vw;
+        min-height: 100vh;
     }
 }
 
@@ -131,6 +136,9 @@ nav .links li a:hover {
 
 @media (max-width:767px) {
 
+    nav {
+        padding: 20px 15px;
+    }
 
     nav .links li a {
         font-size: 14px;
@@ -163,17 +171,10 @@ nav .links li a:hover {
 .container .photo img {
     width: 100%;
     opacity: .7;
-    position: relative;
+
 }
 
-.container .photo img::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    background-color: black;
-    width: 200px;
-    height: 20px;
-}
+
 
 .container .parent {
     padding-left: 60px;
@@ -212,6 +213,11 @@ nav .links li a:hover {
 
     .container .parent .text p {
         font-size: 14px;
+    }
+
+    .container .photo {
+        right: 0;
+        width: 350px;
     }
 }
 
