@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #245ca9;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -130,13 +130,11 @@ nav .links li a:hover {
 }
 
 @media (max-width:767px) {
-    nav {
-        padding-top: 90px;
-    }
+
 
     nav .links li a {
-        font-size: 15px;
-        padding: 10px;
+        font-size: 14px;
+        padding: 5px;
     }
 
     nav .links li:not(:last-child) {
@@ -179,6 +177,7 @@ nav .links li a:hover {
 
 .container .parent {
     padding-left: 60px;
+    padding-right: 10px;
     color: white;
     width: 100%;
     z-index: 2;
@@ -186,7 +185,7 @@ nav .links li a:hover {
 }
 
 .container .parent .text {
-    width: 450px;
+    max-width: 450px;
     padding-bottom: 30px;
 }
 
@@ -200,6 +199,20 @@ nav .links li a:hover {
     font-size: 15px;
     line-height: 1.6;
 
+}
+
+@media (max-width:767px) {
+    .container .parent {
+        padding-left: 10px;
+    }
+
+    .container .parent .text h1 {
+        font-size: 45px;
+    }
+
+    .container .parent .text p {
+        font-size: 14px;
+    }
 }
 
 .container .parent .info h3 {
@@ -243,7 +256,7 @@ nav .links li a:hover {
 
 .container .parent .last p {
     opacity: .6;
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 45px;
     font-size: 14px;
 }
